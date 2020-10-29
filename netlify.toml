@@ -1,6 +1,6 @@
 [build]
 command = "yarn format && yarn build && yarn export && yarn build:lambda && yarn post-build"
-functions = "functions"
+functions = "lambda"
 publish = ".next"
 [build.processing]
   skip_processing = false
