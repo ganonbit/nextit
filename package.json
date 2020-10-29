@@ -4,9 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "build:lambda": "ntl functions:build -s lambda",
+    "build:lambda": "npx ntl functions:build -s lambda",
     "start": "next start",
-    "start:graphql": "ntl functions:invoke graphql",
+    "start:graphql": "npx ntl functions:invoke graphql",
     "tsc": "tsc --pretty --noEmit",
     "lint": "eslint . --ext jsx --ext js",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx,css,html,yml,yaml}\"",
