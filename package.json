@@ -11,7 +11,7 @@
     "lint": "eslint . --ext jsx --ext js",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx,css,html,yml,yaml}\"",
     "test": "jest",
-    "postcss": "npx postcss build/static/css/*.css --use autoprefixer -d build/static/css/"
+    "post-build": "npx postcss build/static/css/*.css --use autoprefixer -d build/static/css/"
   },
   "husky": {
     "hooks": {
