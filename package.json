@@ -10,12 +10,12 @@
     "tsc": "tsc --pretty --noEmit",
     "lint": "eslint . --ext jsx --ext js",
     "format": "prettier --write \"**/*.{js,jsx,json,md,mdx,css,html,yml,yaml}\"",
-    "test": "jest"
+    "test": "jest",
+    "postcss": "npx postcss build/static/css/*.css --use autoprefixer -d build/static/css/"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run type-check"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
