@@ -1,4 +1,16 @@
 [build]
-command = "yarn format && yarn build && yarn build:lambda && yarn post-build"
-functions = "lambda"
-publish = "build"
+command = "yarn format && yarn build && yarn export && yarn build:lambda && yarn post-build"
+functions = "functions"
+publish = ".next"
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.js]
+  bundle = true
+  minify = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
