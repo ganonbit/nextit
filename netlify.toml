@@ -1,7 +1,7 @@
 [build]
-command = "yarn format && yarn build && yarn export && yarn build:lambda && yarn post-build"
+command = "yarn format && yarn build && yarn export && yarn build:lambda"
 functions = "lambda"
-publish = ".next"
+publish = "out"
 [build.processing]
   skip_processing = false
 [build.processing.css]
